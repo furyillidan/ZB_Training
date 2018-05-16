@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5060F3420A92F72008B53F5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5060F3320A92F72008B53F5 /* PageContentView.swift */; };
+		B5060F3620A937E7008B53F5 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5060F3520A937E7008B53F5 /* UIColor-Extension.swift */; };
 		B511F2DF20A80BC800FB80A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511F2DE20A80BC800FB80A7 /* HomeViewController.swift */; };
 		B511F2E220A81A9600FB80A7 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511F2E120A81A9600FB80A7 /* UIBarButtonItem-Extension.swift */; };
+		B511F2E420A8321600FB80A7 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511F2E320A8321600FB80A7 /* PageTitleView.swift */; };
+		B511F2E620A8340600FB80A7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511F2E520A8340600FB80A7 /* Common.swift */; };
 		B5C5ACE320A6E2BF00A07D68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C5ACE220A6E2BF00A07D68 /* AppDelegate.swift */; };
 		B5C5ACE820A6E2BF00A07D68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C5ACE620A6E2BF00A07D68 /* Main.storyboard */; };
 		B5C5ACEA20A6E2C200A07D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C5ACE920A6E2C200A07D68 /* Assets.xcassets */; };
@@ -22,8 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5060F3320A92F72008B53F5 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		B5060F3520A937E7008B53F5 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		B511F2DE20A80BC800FB80A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B511F2E120A81A9600FB80A7 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		B511F2E320A8321600FB80A7 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		B511F2E520A8340600FB80A7 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B5C5ACDF20A6E2BF00A07D68 /* Live_Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Live_Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C5ACE220A6E2BF00A07D68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C5ACE720A6E2BF00A07D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 		B511F2E020A81A4200FB80A7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B5060F3520A937E7008B53F5 /* UIColor-Extension.swift */,
 				B511F2E120A81A9600FB80A7 /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Extension;
@@ -153,6 +162,7 @@
 		B5C5ACFE20A760AB00A07D68 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B511F2E520A8340600FB80A7 /* Common.swift */,
 				B511F2E020A81A4200FB80A7 /* Extension */,
 			);
 			path = Tools;
@@ -178,6 +188,8 @@
 		B5C5AD1420A8060B00A07D68 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				B5060F3320A92F72008B53F5 /* PageContentView.swift */,
+				B511F2E320A8321600FB80A7 /* PageTitleView.swift */,
 			);
 			name = V;
 			path = "New Group";
@@ -385,7 +397,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C5ACE320A6E2BF00A07D68 /* AppDelegate.swift in Sources */,
+				B5060F3620A937E7008B53F5 /* UIColor-Extension.swift in Sources */,
+				B511F2E620A8340600FB80A7 /* Common.swift in Sources */,
 				B5C5AD1220A7D2AA00A07D68 /* MainViewController.swift in Sources */,
+				B5060F3420A92F72008B53F5 /* PageContentView.swift in Sources */,
+				B511F2E420A8321600FB80A7 /* PageTitleView.swift in Sources */,
 				B511F2E220A81A9600FB80A7 /* UIBarButtonItem-Extension.swift in Sources */,
 				B511F2DF20A80BC800FB80A7 /* HomeViewController.swift in Sources */,
 			);
