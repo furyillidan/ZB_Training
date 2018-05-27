@@ -27,6 +27,8 @@ class AnchorGroup: NSObject {
     var tag_name : String = ""
     //組顯示的圖標
     var icon_name : String = "Image_online"
+    //遊戲對應的圖標
+    var icon_url : String = ""
     //定義主播的模型對象數組
     var anchors : [AnchorModel] = [AnchorModel]()
     

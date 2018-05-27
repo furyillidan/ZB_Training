@@ -6,10 +6,16 @@
 //  Copyright © 2018年 inow. All rights reserved.
 //
 
+//請求數據轉成模型
+//對數據進行排序
+//顯示HeaderView中內容
+
+
 import UIKit
 
 class RecommendViewModel {
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+    lazy var cycleModels : [CycleModel] = [CycleModel]()
     private lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     private lazy var prettyGroup : AnchorGroup = AnchorGroup()
 }
@@ -101,4 +107,26 @@ extension RecommendViewModel {
         }
    }
     
+    //請求無限連播數據
+    func requestcCycleData(finishCallback: @escaping () -> ()) {
+        NetworkTools.requestData(.get, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version":"2.300"]) { (result) in
+           
+            //獲取整體字典數據
+            guard let resultDict = result as? [String: NSObject] else {return}
+            
+            //根據data的key獲取數據
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else {return}
+        
+            //字典轉模型
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
+            print("請求到無限數據")
+            finishCallback()
+        }
+    }
+    
 }
+
+
+
